@@ -1,0 +1,58 @@
+The Netflix dataset contains 8,807 entries with 12 columns. These columns represent various attributes of Netflix shows and movies, including:
+
+1. `show_id`: A unique identifier for each title.
+2. `type`: Indicates whether the title is a "Movie" or a "TV Show."
+3. `title`: The title of the movie or TV show.
+4. `director`: The director(s) of the title (with some missing values).
+5. `cast`: The actors featured in the title (some entries are missing).
+6. `country`: The country of production (some entries are missing).
+7. `date_added`: The date the title was added to Netflix (with minor missing values).
+8. `release_year`: The year the title was released.
+9. `rating`: The content rating (e.g., PG-13, TV-MA, etc.), with a few missing entries.
+10. `duration`: The duration of movies in minutes or the number of seasons for TV shows.
+11. `listed_in`: Genres or categories the title belongs to.
+12. `description`: A brief summary of the title.
+
+The data includes missing values in columns like `director`, `cast`, `country`, and `rating`, which might require cleaning or handling before analysis.
+
+
+Here’s a summary of the analysis for the Netflix dataset:
+
+1. Total Titles: The dataset contains 8,807 entries, comprising both movies and TV shows.
+   - Movies: 6,131 entries (69.6%).
+   - TV Shows: 2,676 entries (30.4%).
+
+2. Top Genres: The most common categories or genres include:
+   - Dramas, International Movies (362 titles).
+   - Documentaries (359 titles).
+   - Stand-Up Comedy (334 titles).
+   - Other popular combinations like Comedies, Dramas, International Movies.
+
+3. Missing Data:
+   - The `director` column has the most missing values (2,634 entries or 30%).
+   - Other fields with missing data include `cast` (825), `country` (831), `date_added` (10), and `rating` (4).
+
+4. Release Year Trends:
+   - The number of titles has increased significantly in recent years, peaking between 2016 and 2019.
+   - The highest release counts were in 2018 (1,147 titles) and 2019 (1,030 titles).
+
+5. Countries:
+   - The United States dominates production with 2,818 titles, followed by India (972) and the United Kingdom (419).
+   - Other prominent countries include Japan (245) and South Korea (199).
+
+6. Content Ratings:
+   - The most common ratings are:
+     - TV-MA (mature audiences): 3,207 titles.
+     - TV-14 (teen audiences): 2,160 titles.
+     - TV-PG (parental guidance): 863 titles.
+   - Rare ratings include *NC-17*, *UR*, and some unusual entries like "74 min" and "84 min" (likely data errors).
+
+### Key Insights:
+- Movie Dominance: Movies make up the majority of the content.
+- Genre Diversity: The platform offers a wide range of genres, catering to various preferences.
+- Global Presence: While dominated by the U.S., the content reflects international production, especially from India and the U.K.
+- Audience Targeting: A significant portion of content is for mature (TV-MA) and teen (TV-14) audiences.
+
+Conclusion:
+Here, I performed a detailed exploratory data analysis (EDA) and sentiment analysis in Google Colab. The EDA highlighted trends like genre diversity, dominance of U.S. content, and a focus on mature/teen audiences.
+Sentiment analysis of descriptions revealed an overall positive tone in Netflix titles, aligning with its global appeal and diverse audience reach.
